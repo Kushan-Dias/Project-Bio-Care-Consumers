@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!--Font Awesome CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        
+        <title>Bio Care Consumers</title>
+        <link rel='icon' href='images/fevicon.png' type='image/x-icon'/ >
+        
+        <!--custome CSS-->
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <!--navigation Bar-->
+        <nav>
+            <div class="logo">
+                
+                <a href="index.html"><img class="logoSize" src="images/Active%20Aloe%20Logo.png"  ></a>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="products.html">Product</a>
+                </li>
+                 <li>
+                    <a href="inqurie.html">Inqurie</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                
+            </ul>
+            <!--burger icon-->
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <!--contact section-->
+        <section class="inqurie-section">
+            <div class="inqurie-container">
+                <h2>Ordering Form</h2>
+                <div class="inqurie-form">
+                    <form method="post" action="inqurieHandler.php">
+                        <input name="FirstName" type="text" placeholder="First Name" required>
+                        <input name="LastName" type="text" placeholder="Last Name" required>
+                        <input name="Email" type="text" placeholder="Email" required>
+                        <input name="Telephone" type="tel" placeholder="Telephone" pattern="[0-9]{10}" required>
+                        <textarea name="Address" placeholder="Address" rows="3" required></textarea>
+                        <input name="City" type="text" placeholder="City" required><br>
+                        <label>
+                            <input list="state" name="State" placeholder="State/Province" /></label>
+                            <datalist id="state">
+                              <option value="Western Province">
+                              <option value="Sourthern Province">
+                              <option value="North Western Province">
+                              <option value="Sabaragamu Province">
+                              <option value="Central Province">
+                              <option value="Uva Province">
+                              <option value="North Central Province">
+                              <option value="Northern Province">
+                              <option value="Eastern Province">
+                            </datalist><br>
+                        <label>
+                            <input list="Country" name="Country" placeholder="Country" /></label>
+                            <datalist id="Country">
+                              <option value="Australia">
+                              <option value="Italy">
+                              <option value="United Kingdom">
+                              <option value="United States">
+                              <option value="India">
+                              <option value="Germeny">
+                              <option value="Ireland">
+                              <option value="Sri Lanka">
+                              <option value="France">
+                            </datalist><br>
+                    
+                             <label>
+                            <input list="Product" name="Product" placeholder="Product 1" /></label>
+                            <datalist id="Product">
+                              <option value="Aloe Vera">
+                              <option value="Bael Fruit">
+                              <option value="Tamerine">
+                              <option value="Wood Apple">
+                              <option value="Mango Drink">
+                              <option value="Mixed Fruit">
+                              <option value="Ginco">  
+                            </datalist>
+                            <label>
+                             <input list="quantity" name="Quantity" placeholder="Quantity" /></label>
+                            <datalist id="quantity">
+                              <option value="40 box/ 960 bottles">
+                              <option value="150 box/ 3600 bottles">
+                              <option value="200 box/ 4800 bottles">
+                            </datalist><br>
+                    
+                            <label>
+                            <input list="Product" name="Product1" placeholder="Product 2" /></label>
+                            <datalist id="Product">
+                              <option value="Aloe Vera">
+                              <option value="Bael Fruit">
+                              <option value="Tamerine">
+                              <option value="Wood Apple">
+                              <option value="Mango Drink">
+                              <option value="Mixed Fruit">
+                              <option value="Ginco">  
+                            </datalist>
+                             <label>
+                            <input list="quantity" name="Quantity1" placeholder="Quantity" /></label>
+                            <datalist id="quantity">
+                              <option value="40 box/ 960 bottles">
+                              <option value="150 box/ 3600 bottles">
+                              <option value="200 box/ 4800 bottles">
+                            </datalist><br>
+                            
+                            <label>
+                            <input list="Product" name="Product2" placeholder="Product 3" /></label>
+                            <datalist id="Product">
+                              <option value="Aloe Vera">
+                              <option value="Bael Fruit">
+                              <option value="Tamerine">
+                              <option value="Wood Apple">
+                              <option value="Mango Drink">
+                              <option value="Mixed Fruit">
+                              <option value="Ginco">  
+                            </datalist>
+                            <label>
+                             <input list="quantity" name="Quantity2" placeholder="Quantity" /></label>
+                            <datalist id="quantity">
+                              <option value="40 box/ 960 bottles">
+                              <option value="150 box/ 3600 bottles">
+                              <option value="200 box/ 4800 bottles">
+                            </datalist><br>
+                        
+                        <label>
+                            <input list="Product" name="Product3" placeholder="Product 4" /></label>
+                            <datalist id="Product">
+                              <option value="Aloe Vera">
+                              <option value="Bael Fruit">
+                              <option value="Tamerine">
+                              <option value="Wood Apple">
+                              <option value="Mango Drink">
+                              <option value="Mixed Fruit">
+                              <option value="Ginco">  
+                            </datalist>
+                            <label>
+                             <input list="quantity" name="Quantity3" placeholder="Quantity" /></label>
+                            <datalist id="quantity">
+                              <option value="40 box/ 960 bottles">
+                              <option value="150 box/ 3600 bottles">
+                              <option value="200 box/ 4800 bottles">
+                            </datalist><br>
+                        
+                        <label>
+                            <input list="Product" name="Product4" placeholder="Product 5" /></label>
+                            <datalist id="Product">
+                              <option value="Aloe Vera">
+                              <option value="Bael Fruit">
+                              <option value="Tamerine">
+                              <option value="Wood Apple">
+                              <option value="Mango Drink">
+                              <option value="Mixed Fruit">
+                              <option value="Ginco">  
+                            </datalist>
+                            <label>
+                             <input list="quantity" name="Quantity4" placeholder="Quantity" /></label>
+                            <datalist id="quantity">
+                              <option value="40 box/ 960 bottles">
+                              <option value="150 box/ 3600 bottles">
+                              <option value="200 box/ 4800 bottles">
+                            </datalist><br>
+                        
+                        <label>
+                            <input list="Product" name="Product5" placeholder="Product 6" /></label>
+                            <datalist id="Product">
+                              <option value="Aloe Vera">
+                              <option value="Bael Fruit">
+                              <option value="Tamerine">
+                              <option value="Wood Apple">
+                              <option value="Mango Drink">
+                              <option value="Mixed Fruit">
+                              <option value="Ginco">  
+                            </datalist>
+                            <label>
+                             <input list="quantity" name="Quantity5" placeholder="Quantity" /></label>
+                            <datalist id="quantity">
+                              <option value="40 box/ 960 bottles">
+                              <option value="150 box/ 3600 bottles">
+                              <option value="200 box/ 4800 bottles">
+                            </datalist><br>
+                        
+                        <label>
+                            <input list="Product" name="Product6" placeholder="Product 7" /></label>
+                            <datalist id="Product">
+                              <option value="Aloe Vera">
+                              <option value="Bael Fruit">
+                              <option value="Tamerine">
+                              <option value="Wood Apple">
+                              <option value="Mango Drink">
+                              <option value="Mixed Fruit">
+                            <option value="Ginco">  
+                            </datalist>
+                            <label>
+                             <input list="quantity" name="Quantity6" placeholder="Quantity" /></label>
+                            <datalist id="quantity">
+                              <option value="40 box/ 960 bottles">
+                              <option value="150 box/ 3600 bottles">
+                              <option value="200 box/ 4800 bottles">
+                            </datalist><br>
+                        
+                        
+                        <textarea name="Order" placeholder="Order Note" rows="5" required></textarea>
+                        <button class="submit">Inqurie</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!--footer -->        
+        <section class="footer-section">
+        <footer>
+            <div class="footer-area">
+                <div class="footer-container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="footer-content">
+                            <div class="footer-head">
+                                    <h2><span>Quick </span>  Links</h2>
+                                        <div class="footer-quicklink"></div>
+                                             <ul class="quicklinks">
+                                                <li>
+                                                    <a href="index.html">Home</a>
+                                                </li>
+                                                <li>
+                                                    <a href="products.html">Product</a>
+                                                </li>
+                                                <li>
+                                                      <a href="inqurie.html">Inqurie</a>
+                                                </li>
+                                                <li>
+                                                    <a href="about.html">About</a>
+                                                </li>
+                                                <li>
+                                                    <a href="contact.html">Contact</a>
+                                                </li>
+                
+                                            </ul>
+                               
+                            </div>
+                        </div>    
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="footer-content">
+                                <div class="footer-head">
+                                <h2>Contact</h2>
+                                    <div class="footer-contact">
+                                        <p class="footer-info"><span>Bio Care Consumers,</span></p>
+                                        <p class="footer-info"><span>No.104/C,</span> Samagi Mawatha,</p>
+                                        <p class="footer-info"><span>Kaludewala,</span></p>
+                                        <p class="footer-info"><span>Panadura,</span> Sri Lanka.</p><br>
+                                        <p class="telephone"><span> Hotline: </span>+94 7107331100</p>
+                                        <p class="telephone"><span> Office&nbsp;&nbsp;: </span>+94 382225089</p>
+                                        <p class="telephone"><span> Email&nbsp;&nbsp;&nbsp;: </span>biocarecons@gmail.com</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="footer-content">
+                                    <div class="awards">
+                                        <img class="ISO" src="images/ISO_9001_VAI+UAF.png" width="250" height="110">
+                                
+                                    </div>
+                                    <div class="footer-icons">
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.facebook.com/biocareconsumers" target="_blank"><i class="fa fa-facebook" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></a>
+                                                <a href="#"><i class="fa fa-instagram">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></a>
+                                                <a href="https://activealoebiocare.com/contact.html" target="_blank"><i class="fa fa-envelope">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></a>
+                                            </li>
+                                        </ul>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+        </footer>    
+        </section>			
+						
+        <!-- copyright -->
+                    <div class="copy-right py-3">
+                        <div class="container">
+                            <p class="text-center text-white">© 2020 Bio Care Cons. All rights reserved | Design by
+                                <a href="https://www.facebook.com/Kushan4518/"> Kushan Dias</a>
+                            </p>
+                        </div>
+                    </div>
+        
+        <!-- bootstrap JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        
+        <!--custome JavaScript-->
+        <script src="biocare.js"></script>
+    </body>
+    
+</html>    
